@@ -1,0 +1,393 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WebTrack",
+		"_postman_id": "05d178ad-6bb5-d4e4-8de3-9a61a2d23232",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Login",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user-login?email=abhishek.singh@codenia.in",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user-login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "abhishek.singh@codenia.in",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/users",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/projects",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/projects",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/add-project",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/add-projects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "project",
+							"value": "Project Title 3 - Test",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "eiliana_project_id",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "eiliana_client_id",
+							"value": "1234567",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/project-creation",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/project-creation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "project",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "task",
+							"value": "Delete Module",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "working_per_hours",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "eiliana_module_id",
+							"value": "12345",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/project-creation-list",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/project-creation-list",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/project-assignment",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/project-assignment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "project",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "task_id",
+							"value": "8",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "eiliana_project_id",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "freelancer_id",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/project-assignment-list",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/project-assignment-list",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user-timing-report",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user-timing-report",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/keyboard-mouse-event-details",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/keyboard-mouse-event-details",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user-project-task",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/user-project-task",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/screenshots",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/screenshots",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"screenshots"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "13",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get UserDetails",
+			"request": {
+				"url": "http://65.0.2.180/api/getuserdetails",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Name",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "abhisek.singh@codenia.in",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,41 @@
+
+
+User Login
+
+	url 	: http://127.0.0.1:8000/api/user-login
+	method 	: get
+	param 	: email : abhishek.singh@codenia.in
+
+Screenshots List
+
+	url 	: http://127.0.0.1:8000/api/screenshots
+	method 	: get
+	param 	: 	userId : 13
+				date   : 2021-11-30
+
+Add Project
+
+	url 	: http://127.0.0.1:8000/api/add-projects
+	method 	: post
+	param 	: 	project 		    : project name
+				eiliana_project_id  : 12345
+				eiliana_client_id   : 123
+
+Project Creation
+
+	url 	: http://127.0.0.1:8000/api/project-creation
+	method 	: post
+	param 	: 	project 			:	2
+				task				:	Delete Module
+				working_per_hours	:	10
+				eiliana_module_id	:	12345
+
+Project Assignment
+
+	url 	: http://127.0.0.1:8000/api/project-assignment
+	method 	: post
+	param 	: 	project 			:	2
+				task_id 			:	8
+				user_id 			:	2
+				eiliana_project_id	:	1234
+				freelancer_id 		: 	123456
